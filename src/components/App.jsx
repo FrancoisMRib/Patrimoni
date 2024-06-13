@@ -8,6 +8,9 @@ import { Contact } from "./pages/Contact";
 import { Jeux } from "./pages/Jeux";
 import { Apropos } from "./pages/About";
 import { Liens } from "./pages/Links";
+import { Connexion } from "./pages/Connexion";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 // import { Map } from './Map.jsx';
 import React from 'react';
 //import {Carousel} from './pages/Carrousel'; // Importez le composant Carousel
@@ -29,10 +32,10 @@ const router = createBrowserRouter([
     path:"/contact",
     element: <Contact/>
   },
-  // {
-  //   path:"/connexion",
-  //   element: <Connexion/>
-  // },
+  {
+    path:"/connexion",
+    element: <Connexion/>
+  },
   {
     path:"/about",
     element: <Apropos/>
@@ -45,7 +48,12 @@ const router = createBrowserRouter([
 
 export function App() {
   return (
-    <RouterProvider router={router} />
+    <div>
+
+      <RouterProvider router={router} />
+
+    </div>
+    
     // <div className="App">
     //   <h1>Quiz Patrimoni</h1>
     //   <Carousel />

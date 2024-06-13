@@ -1,0 +1,27 @@
+.fondecran{
+    width: 100%;
+}
+
+.buttongen {
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.select{
+    display: flex;
+    flex: row;
+}
+
+#HeaderLogo {
+    background-color: #C17373;
+    height: 39px;
+    padding-right: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,5 +1,5 @@
 import HeaderImg from '../img/Fond_bandeau_clair-removebg-preview 1.png';
-import HeaderLogo from '../img/Logo_Patrimoni-removebg-preview 2.png'
+
 import './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ export function Header() {
         <div id="Header">
             <img src={HeaderImg} alt='HeaderImg' />
             <div id="HeaderOptions">
-                <p>Se connecter</p>
+                <Link to={'/connexion'}>Se connecter</Link>
                 <div id="separation" />
                 {/* <img src="./src/img/globe_icon.png" alt="" className='clear'/> */}
                 <p>Options</p>
@@ -29,9 +29,7 @@ export function Header() {
                     <input placeholder='Rechercher' />
                 </div>
             </div>
-            <div id="HeaderLogo">
-                <img src={HeaderLogo} alt='HeaderLogo' />
-            </div>
+
         </div>
     );
 }

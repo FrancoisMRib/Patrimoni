@@ -1,11 +1,17 @@
 import { Header } from "../Header";
 import { Footer } from "../Footer";
+import { Return } from "../Return";
+import './Links.css';
 
 export function Liens() {
     return (
         <div>
             <Header/>
-            <p>Ce sont les liens !</p>
+            <Return/>
+            <div>
+                <p>Ce sont les liens !</p>
+            </div>
+            
             <Footer/>
             
         </div>
